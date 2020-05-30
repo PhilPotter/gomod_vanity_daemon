@@ -49,6 +49,7 @@ Copy the gomod_vanity_daemon binary to a central location such as /usr/local/bin
 FreeBSD:
 ```
 cp rc_scripts/freebsd/gomod_vanity_daemon /usr/local/etc/rc.d
+chmod +x /usr/local/etc/rc.d/gomod_vanity_daemon
 sysrc gomod_vanity_daemon_enable="YES"
 ```
 
