@@ -1,0 +1,11 @@
+[Unit]
+Description=gomod vanity daemon
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/gomod_vanity_daemon
+
+[Install]
+WantedBy=multi-user.target

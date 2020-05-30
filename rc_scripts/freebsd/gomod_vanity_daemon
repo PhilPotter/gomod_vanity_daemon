@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# PROVIDE: gomod_vanity_daemon
+# BEFORE: LOGIN
+# REQUIRE: NETWORKING
+
+. /etc/rc.subr
+
+name=gomod_vanity_daemon
+rcvar=gomod_vanity_daemon_enable
+
+command="/usr/local/bin/gomod_vanity_daemon"
+
+load_rc_config ${name}
+run_rc_command "$1"
